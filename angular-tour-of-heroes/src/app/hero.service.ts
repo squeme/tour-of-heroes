@@ -9,6 +9,6 @@ export class HeroService {
     constructor() { }
 
     getHeroes(): Observable<Hero[]> {
-        return HEROES;
+        return of (HEROES);
     }
 }
